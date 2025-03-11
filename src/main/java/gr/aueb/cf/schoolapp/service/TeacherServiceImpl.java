@@ -1,6 +1,5 @@
 package gr.aueb.cf.schoolapp.service;
 
-import gr.aueb.cf.schoolapp.dao.ICItyDAO;
 import gr.aueb.cf.schoolapp.dao.ITeacherDAO;
 import gr.aueb.cf.schoolapp.dao.exceptions.TeacherDAOException;
 import gr.aueb.cf.schoolapp.dto.TeacherInsertDTO;
@@ -12,7 +11,6 @@ import gr.aueb.cf.schoolapp.mapper.Mapper;
 import gr.aueb.cf.schoolapp.model.Teacher;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class TeacherServiceImpl implements ITeacherService {

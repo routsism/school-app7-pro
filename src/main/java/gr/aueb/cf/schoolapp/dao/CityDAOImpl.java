@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CityDAOImpl implements ICItyDAO{
+public class CityDAOImpl implements ICityDAO {
     @Override
     public List<City> getAll() throws SQLException {
         String sql = "SELECT * FROM cities";
