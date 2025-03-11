@@ -272,9 +272,10 @@ public class InsertTeacherPage extends JFrame {
 		JButton insertBtn = new JButton("Υποβολή");
 		insertBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				// Data Binding
 				TeacherInsertDTO insertDTO = doDataBiding();
 				TeacherReadOnlyDTO teacherReadOnlyDTO;
+				// Data Binding
+				insertDTO = doDataBiding();
 				// Validation
 				Map<String , String> errors = TeacherValidator.validate(insertDTO);
 				if (!errors.isEmpty()) {
